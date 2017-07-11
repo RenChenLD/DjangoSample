@@ -20,7 +20,9 @@ from rest_framework.routers import DefaultRouter
 
 
 router = DefaultRouter()
-router.register(r'^')
+# router.register(r'^post')
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^index/', views.index())
 ]
