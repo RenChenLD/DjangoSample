@@ -15,9 +15,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Personal &mdash; Free HTML5 Bootstrap Website Template </title>
+    <title>Ren Chen&mdash;Personal website.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co"/>
+    <meta name="description" content="A brief web page to introduce myself."/>
     <meta name="keywords"
           content="Self introduce"/>
 
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content=""/>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="../static/favicon.ico">
+    <!--<link rel="shortcut icon" href="../static/favicon.ico">-->
 
     <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 
@@ -43,10 +43,8 @@
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="../static/css/icomoon.css">
     <!-- Bootstrap  -->
-    <!--<link rel="stylesheet" href="../static/css/bootstrap.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <!-- Theme style  -->
     <link rel="stylesheet" href="../static/css/style.css">
 
@@ -115,7 +113,6 @@
                                 <p>Bachelor of Computer Science and Technology, <br>Suzhou University of Technology, Suzhou, Jiangsu, China</p>
                             </div>
                         </div>
-
                         <div class="fh5co-feature">
                             <div class="fh5co-icon">
                                 <i class="icon-graduation-cap"></i>
@@ -125,12 +122,11 @@
                                 <p>Master of Computer Science,<br>Illinois Institute of Technology, Chicago, Illinois</p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
+
         <div class="fh5co-tab-content" data-content="3">
             <div class="fh5co-content-inner">
                 <div class="row">
@@ -142,7 +138,8 @@
                             <div class="fh5co-text">
                                 <h2>2013 - 2014</h2>
                                 <h3>Suzhou Keda Technology Co., Ltd</h3>
-                                <p>Worked with the developer team on successfully developing an iOS application.
+                                <p><strong>Position: iOS application developer</strong>
+                                    <br>Worked with the developer team on successfully developing an iOS application.
                                     <br>Realtime online video surveillance system.
                                     <br>Remote control surveillance cameras through the Internet.</p>
                             </div>
@@ -151,73 +148,71 @@
                 </div>
             </div>
         </div>
+
         <div class="fh5co-tab-content" data-content="4">
             <div class="fh5co-content-inner">
                 <div class="row">
-                    <!--<div class="col-md-12">-->
-                        <!--<h2>Java restful webservice</h2>-->
-                        <!--<p>Design and implement a restful server program runs on Tomcat called Wine Club.-->
-                            <!--<br>Manage the data by using PUT, POST,  GET, DELETE corresponding to CRUD operations.-->
-                            <!--<br>Data stored in XML format files.</p>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-4 col-sm-6 col-xs-12 text-center">-->
-                        <!--<div class="chart" data-percent="100"><span><strong>Java</strong></span></div>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-4 col-sm-6 col-xs-12 text-center">-->
-                        <!--<div class="chart" data-percent="100"><span><strong>XML</strong></span></div>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-4 col-sm-6 col-xs-12 text-center">-->
-                        <!--<div class="chart" data-percent="100"><span><strong>Jersey</strong></span></div>-->
-                    <!--</div>-->
-                    <div class="panel-group">
-                        <div class="panel panel-default">
+                    <div>
+                        <strong>Brief introductions of my projects.</strong>
+                    </div>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel" style="background-color: black; color: white">
                             <div class="panel-heading">
-                                <h2 class="panel title">
-                                    <a data-toggle="collapse" href="#collapse1">Java Restful Webservice</a>
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><strong>Java Restful Webservice</strong></a>
                                 </h2>
                             </div>
-                            <div id="collpase1" class="panel-collpase collpase">
-                                <div class="panel-body">
-                                    <p>Design and implement a restful server program runs on Tomcat called Wine Club.
-                                        <br>Manage the data by using PUT, POST,  GET, DELETE corresponding to CRUD operations.
-                                        <br>Data stored in XML format files.
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body" style="border-top-color: black">
+                                    <p>Jersey restful web service.
+                                        <br>Design and implement a restful server program runs on Tomcat called Wine Club. The program simulates the running of a wine club as a administrator.
+                                        <br>Manage the data by using PUT, POST, GET, DELETE corresponding to CRUD operations on relative objects.
+                                        <br>Data is stored in XML format files.
+                                        <br>Unit tests are performed.
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel" style="background-color: black; color: white">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><strong>Clouding Computing</strong></a>
+                                </h2>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body" style="background-color: black; max-height: 300px;overflow-y: scroll; border-top-color: black">
+                                    <p><strong>Hadoop & Spark:</strong>
+                                        <br>Sorting 10GB data and 100GB data on single-node and multi-node cluster with AWS EC2 virtual machines. Perform shared memory sorting algorithm on single-node experiment.
+                                        Perform map-reduce on multi-node experiment. The purpose of the experiment is to compare the performances between Hadoop and Spark.
+                                        <br><strong>SQS & DynamoDB:</strong>
+                                        <br>The program is mainly consisted of Client and Worker both have local and remote mode separately. Client sends tasks to a queue (Tasks Queue) which can be local or Amazon SQS depends on the current mode and retrieves results from another queue (Result Queue). Worker loads tasks from the task queue, executes them and sends results to the result queue while finished the execution of tasks. The remote worker has to create a new instance to execute the tasks.
+                                        <br><strong>S3:</strong>
+                                        <br>It will collect pictures from Internet and use ffmpeg to generate video and save it into Amazon S3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel" style="background-color: black; color: white">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><strong>Natural language processing</strong></a>
+                                </h2>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body" style="background-color: black; max-height: 300px; overflow-y: scroll; border-top-color: black;">
+                                    <p><strong>Maximum entropy tagger:</strong>
+                                        <br>In natural language processing tasks, Part-Of-Speech tagging is one of the most important text analysis tasks used to classify words into their part-of-speech and label them according the tag set which is a collection of tags used for the POS tagging.
+                                        <br>After implemented the Maximum Entropy Tagger, I did some experiments to evaluate the performance comparing with a back-off tagger. The back-off tagger is consisted of Unigram Tagger, Bigram Tagger, and Trigram Tagger. The data corpus used for the experiments are Treebank, Conll2000, and Brown. The taggers were tested in different sizes of the corpuses.
+                                        <br>The conclusion is that the Maximum Entropy Tagger has a better performance than Back-Off Tagger on accuracy while the Maximum Entropy Tagger takes more time to finish tasks.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-12">
-                        <h2>Clouding computing</h2>
-                        <p>Hadoop: TeraSort on single-node and multi-node cluster with AWS EC2 virtual machines.
-                            <br>Spark: TeraSort on single-node and multi-node cluster with AWS EC2 virtual machines.
-                            <br>SQS & DynamoDB: Implement a  program to test the performance(throughput and efficiency) of  SQS. DynamoDB is used to keep track of the messages that have been seen.
-                            <br>S3: Animoto clone. Design and implement a web application to convert pictures to video.</p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="100"><span><strong>Java</strong></span></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="100"><span><strong>AWS</strong></span></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="100"><span><strong>Hadoop</strong></span></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="100"><span><strong>Spark</strong></span></div>
-                    </div>
-
-
-                    <div class="col-md-12">
-                        <h2>Natural language processing</h2>
-                        <p>Maximum entropy tagger: Design and implement a part-of-speech tagger based on the Maxent classifier.</p>
-                    </div>
+<!--
                     <div class="col-md-4 col-sm-6 col-xs-12 text-center">
                         <div class="chart" data-percent="100"><span><strong>Python</strong></span></div>
                     </div>
-
-
+-->
                 </div>
             </div>
         </div>
